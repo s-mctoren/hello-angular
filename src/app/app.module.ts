@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CardComponent } from './components/card/card.component';
 import { PagesModule } from './pages/pages.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { PagesModule } from './pages/pages.module';
     NavbarComponent,
     CardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, PagesModule],
+  imports: [BrowserModule, AppRoutingModule, PagesModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
