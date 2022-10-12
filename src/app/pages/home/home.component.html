@@ -1,19 +1,7 @@
 <div class="wrapper">
-  <p>home works!</p>
-  <app-profile></app-profile>
-  <p>
-    Hello, my name is {{ firstName }} {{ lastName }}, I am
-    <span class="highlight">{{ age }}</span> years old.
-  </p>
+  <p class="message">home works!</p>
 
-  <div>
-    <button class="age-control-button" (click)="increaseAge()">+</button>
-    <button class="age-control-button" (click)="decreaseAge()">-</button>
-  </div>
-  <div>
-    <button class="nameChanger" (click)="femaleName()">F</button>
-    <button class="nameChanger" (click)="maleName()">M</button>
-  </div>
+  <app-profile firstName="Kane" lastName="Granger" [age]="11+4"></app-profile>
+  <app-profile firstName="Bob" lastName="Bobbin"></app-profile>
+  <app-profile firstName="Parry" lastName="Hotter"></app-profile>
 </div>
-
-

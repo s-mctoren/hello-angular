@@ -1,3 +1,16 @@
 <mat-card>
-    <p>profile works!</p>
+  <p>My name is {{ firstName }} {{ lastName }} and I am {{ age }} years old.</p>
+  <div class="button-container">
+    <span>
+      <button class="age-button" (click)="decreaseAge()">-</button>
+      <button class="age-button" (click)="increaseAge()">+</button>
+    </span>
+    <span>
+      <button class="gender-button" (click)="femaleFirstName()">female</button>
+      <button class="gender-button" (click)="maleFirstName()">male</button>
+    </span>
+    <span>
+      <button class="default-button" (click)="resetData()">reset</button>
+    </span>
+  </div>
 </mat-card>
